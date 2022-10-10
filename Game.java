@@ -22,7 +22,9 @@ public class Game {
 
         while(!firstTrain.equals("A") && !(easterEgg)) {
             firstTrain = sc.nextLine();
-            System.out.println("This train is out of order.");
+            if (firstTrain.equals("B")) {
+                System.out.println("This train is out of order.");
+            }
             easterEggCounter++;
 
             if (easterEggCounter >= 5) {
@@ -38,6 +40,7 @@ public class Game {
         else {
             System.out.println("This train heads in two directions East and South in Europe,\nWhat direction do you want to go to?");
             String directDest = sc.nextLine();
+
             if (directDest.equals("South")) {
                 System.out.println("The Train starts to head south. ");
 
