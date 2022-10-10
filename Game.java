@@ -44,7 +44,7 @@ public class Game {
             if (directDest.equals("South")) {
                 System.out.println("The Train starts to head south. ");
 
-                System.out.println("Do you want to get off at Portugual, Spain, or Italy?");
+                System.out.println("Do you want to get off at Portugual, Spain, Italy, or Sicily?");
                 String countryDest = sc.nextLine();
 
                 if (countryDest.equals("Portugal")) {
@@ -56,6 +56,9 @@ public class Game {
                 else if (countryDest.equals("Italy")) {
                     System.out.println("You get off in Italy. ");
                 }
+                else if (countryDest.equals("Sicily")) {
+                    System.out.println("You get off in Sicily. ");
+                }
                 else {
                     System.out.println("That's an invalid destination.");
                 }
@@ -65,7 +68,7 @@ public class Game {
             else if (directDest.equals("East")) {
                 System.out.println("The Train starts to head east. ");
 
-                System.out.println("Do you want to get off in Germany, Switzerland, or Turkey?");
+                System.out.println("Do you want to get off in Germany, Switzerland, Finland, or Turkey?");
                 String countryDest = sc.nextLine();
 
                 if (countryDest.equals("Germany")) {
@@ -73,6 +76,9 @@ public class Game {
                 }
                 else if (countryDest.equals("Switzerland")) {
                     System.out.println("You get off in Switzerland. ");
+                }
+                else if (countryDest.equals("Finland")) {
+                    System.out.println("You get off in Finland. 🤮");
                 }
                 else if (countryDest.equals("Turkey")) {
                     System.out.println("You get off in Turkey. ");
